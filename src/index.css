@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  background: rgb(110, 218, 120);
+  background: linear-gradient(
+    90deg,
+    rgba(110, 218, 120, 1) 0%,
+    rgba(255, 162, 0, 1) 100%
+  );
+}
+
+.triangle-left {
+	width: 0;
+	height: 0;
+	border-top: 75px solid transparent;
+	border-right: 150px solid #555;
+	border-bottom: 75px solid transparent;
+}
+
+.triangle-right {
+	width: 0;
+	height: 0;
+	border-top: 75px solid transparent;
+	border-left: 150px solid #555;
+	border-bottom: 75px solid transparent;
+}
+
+.triangle-up {
+	width: 0;
+	height: 0;
+	border-left: 75px solid transparent;
+	border-right: 75px solid transparent;
+	border-bottom: 150px solid #555;
+}
+
+.triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 75px solid transparent;
+	border-right: 75px solid transparent;
+	border-top: 150px solid #555;
+}
+
+.circle {
+  height: 100px;
+  width: 100px;
+  background-color: #555;
+  border-radius: 50%;
+}
+
+.oval {
+  height: 125px;
+  width: 250px;
+  background-color: #555;
+  border-radius: 50%;
+}
+
+.trapezoid {
+	border-bottom: 100px solid #555;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	height: 0;
+	width: 300px;
+}
+
+.rectangle {
+  height: 100px;
+  width: 300px;
+  background-color: #555;
+}
+
+.parallelogram {
+	width: 250px;
+	height: 100px;
+	transform: skew(20deg);
+	background: #555;
+}
+
+.square {
+  height: 100px;
+  width: 100px;
+  background-color: #555;
+}
